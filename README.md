@@ -1,4 +1,4 @@
-# Enhancing Lifetime of Phase Change Memory by Write Variation-Aware Address Remapping  
+# M.Tech Research Project
 
 ## 📄 Published Paper  
 **Title:** Write Intensity-Based Selective Address Remapping  
