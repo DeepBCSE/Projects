@@ -1,7 +1,5 @@
 # Enhancing Lifetime of Phase Change Memory by Write Variation-Aware Address Remapping  
 
-### 📅 May 2022  
-
 ## 📄 Published Paper  
 **Title:** Write Intensity-Based Selective Address Remapping  
 **Conference:** 2023 36th International Conference on VLSI Design & 2023 22nd International Conference on Embedded Systems  
