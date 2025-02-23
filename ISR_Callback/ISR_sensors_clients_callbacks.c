@@ -17,6 +17,29 @@ Design and implement an API that will allow clients to register for notification
  - Interrupt is raised from the sensor to the registered clients when the sensor data is ready
 */
 
+/*
+Prints
+Comments
+Var/Func names
+Thread Safety
+More details whenever needed
+Update headers with the question, solution approach, owner name
+C style top down
+Make it a project with multiple files, documentation file etc
+*/
+
+/*
+Design and implement an API that allows multiple clients to register for notifications when new data from any generic sensor (temperature, GPS, accelerometer, etc.) is available.
+Multi-Sensor Support
+Thread-Safety Considerations
+Callback Mechanism
+Memory-Constrained Systems
+Low-Power Optimization
+    - Sleep over busy waiting
+    - Reduce the usage of Global variable
+    - ask GPT for more
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
