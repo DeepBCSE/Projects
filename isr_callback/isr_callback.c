@@ -1,43 +1,22 @@
 /*
-You are given:
-a device with some sensor attached (temperature, GPS, accelerometer, etc)
-an interrupt you can implement that will fire when data is ready
-a function that will read the sensor data e.g. float read_temperature_data()
-Design and implement an API that will allow clients to register for notifications when new sensor data comes in.
-*/
-
-
-/* Sollution approach:
- - Clients register themeselves for callback
- - Clients are running in threads => Thread safety is needed for shared data among clients
- - Each client registers seperately, when the data is available, callback to all the registered clients
- - Each client will have their own callback function => Simulate using some print operation on the Data
- - read_temperature_data() => Simulate using a random number generator
- - Data Structure to store the callbacks: Array of pointer to function, max size is defined as a 10
- - Interrupt is raised from the sensor to the registered clients when the sensor data is ready
+Design and implement an API that allows multiple clients to register for notifications
+when new data from any generic sensor (temperature, GPS, accelerometer, etc.) is available.
 */
 
 /*
-Prints
-Comments
-Var/Func names
-Thread Safety
-More details whenever needed
-Update headers with the question, solution approach, owner name
-C style top down
-Make it a project with multiple files, documentation file etc
+Interrupt flow:
+1. GPIO hardware inside the microcontroller continuously monitors the voltage level of the pin.
+2. When the voltage changes (HIGH to LOW or LOW to HIGH), the GPIO detects the event.
+3. The NVIC (Interrupt Controller inside the microcontroller) triggers an interrupt request (IRQ).
+4. The CPU then executes the corresponding ISR (Interrupt Service Routine).
 */
 
 /*
-Design and implement an API that allows multiple clients to register for notifications when new data from any generic sensor (temperature, GPS, accelerometer, etc.) is available.
-Multi-Sensor Support
-Thread-Safety Considerations
-Callback Mechanism
-Memory-Constrained Systems
-Low-Power Optimization
-    - Sleep over busy waiting
-    - Reduce the usage of Global variable
-    - ask GPT for more
+Design considerations:
+- Thread-Safety
+- Callback Mechanism
+- Memory-Constrained Systems
+- Low-Power Optimization
 */
 
 #include <stdio.h>
